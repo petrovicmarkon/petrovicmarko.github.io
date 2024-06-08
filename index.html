@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>BIBIMBOB</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.ico" rel="icon" />
+    <link href="assets/img/apple-touch-icon.ico" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+   
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css"
+  />
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  
+  <!-- Link na css-->
+  <link href="style.css" rel="stylesheet" />
+    
+
+  
+  </head>
+
+  <body>
+    
+
+    <!-- Header -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <div class="logo me-auto">
+        <h1><a>BIBIMBOB</a></h1> 
+      </div>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hlavni">Domů</a></li>
+            <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Kontakt</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+
+        <!-- Tlačítko rezervace stolu-->
+        <a href="#book-a-table" class="book-a-table-btn scrollto"
+          >Zarezervuj si stůl</a>
+      </div>
+    </header>
+    <!-- Konec -->
+
+    <!-- Hlavní stránka -->
+    <section id="hlavni">
+      <div class="hero-container max-width-container">
+
+          <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active" >
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2 class="animate__animated animate__fadeInDown">
+                    <span>BIBIMBOB</span> Restaurant
+                  </h2>
+                  <p class="animate__animated animate__fadeInUp">
+                    진정한 사랑은 위장을 통과한</p>
+                  <div>
+                    <a
+                      href="#menu"
+                      class="btn-menu animate__animated animate__fadeInUp scrollto"
+                      >Naše menu</a
+                    >
+                    <a
+                      href="#book-a-table"
+                      class="btn-book animate__animated animate__fadeInUp scrollto"
+                      >Zarezervuj si stůl</a>
+                      
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+        </div>
+      </div>
+    </section>
+    <!-- Konec -->
+
+    <main id="main">
+
+      <!-- Menu -->
+
+      <section id="menu" class="menu section-bg">
+        <div class="container max-width-container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Menu</h2>
+          </div>
+
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="menu-flters">
+                <li data-filter="*" class="filter-active">Celé menu</li>
+                <li data-filter=".filtr-sushi">Sushi</li>
+                <li data-filter=".filtr-speciality">Speciality</li>
+                <li data-filter=".filtr-bubble">Bubble tea</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-6 menu-item filtr-sushi">
+              <img src="sushi1.jpg" class="menu-img" alt=""/>
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a> Mix Maki Maki 20ks </a><span> 190 Kč </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filtr-sushi">
+              <img src="sushi2.jpg" class="menu-img" alt=""/>
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a>Umaraki 4ks s lososem a avokádem</a><span> 110 Kč</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filtr-speciality">
+              <img src="special1.jpg" class="menu-img" alt="" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a> Hagakasami s plody moře</a><span>260 Kč</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filtr-speciality">
+              <img src="special2.jpg" class="menu-img" alt="" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a>Smažený ragiáčky s ryží</a><span>160 Kč</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filtr-speciality">
+              <img src="specialita3.jpg" class="menu-img" alt="" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a>Smaženě křupavá fretka s plněnými chrapičky se štávou z jater</a><span>320 Kč</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filtr-sushi">
+              <img src="sushi3.jpg" class="menu-img" alt=""/>
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a>Nigiri s citroném 1ks</a><span>80 Kč</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filtr-speciality">
+              <img src="specialita5.jpg" class="menu-img" alt=""/>
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a>튀긴 고양이 s rýži</a><span>260 Kč</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filtr-bubble">
+              <img src="bubble1.jpg" class="menu-img" alt=""/>
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a>Strawberry Aura </a><span>99 Kč</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filtr-bubble">
+              <img src="bubble2.jpg" class="menu-img" alt="" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a>Juicy aloha</a><span>99 Kč</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filtr-bubble">
+              <img src="bubble3.jpg" class="menu-img" alt="" />
+              <div class="menu-item-details">
+                <div class="menu-content">
+                  <a>Lotus freshyat</a><span>119 Kč</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- Dopolední menu -->    
+      <div id="dopoledne" class="dopolední">
+        <h2>Odpolední Menu</h2>
+        <h5>Platné pouze do 12 hodin</h5>
+        <ul>
+            <li>Kyagari Ramen s mořskými potvory - 119 Kč</li>
+            <li>Smažené skleněnky na ramadiu s hranolky - 259 Kč</li>
+            <li>Big šmakolád nagasiku s krevety - 259 Kč</li>
+            <li>Mochi Jahoda, Yuzu a Matcha - 89 Kč/kus</li>
+        </ul>
+    </div>
+
+
+      <!-- Rezervace -->
+      <section id="book-a-table" class="book-a-table">
+        <div class="container max-width-container">
+          <div class="section-title">
+            <h2>Rezervace</h2>
+          </div>
+
+          <form id="reservation-form" class="email-form">
+            <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+                <input type="text" name="name" class="form-control"
+                  id="name" placeholder="Vaše jméno*" required/>
+              
+              </div>
+
+              <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email"
+                  id="email" placeholder="Váš email*" />
+              </div>
+
+              <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                <input type="telephone number" class="form-control" name="phone"
+                  id="phone" placeholder="Vaše telefonní číslo*" />
+              </div>
+              
+              <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input type="date" name="date" class="form-control" id="date" />
+                <h6>*</h6>
+              </div>
+              
+              <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input type="time" class="form-control" name="time" id="time"/>
+                <h6>*</h6>
+              </div>
+             
+              <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input type="number" class="form-control" name="people" id="people" placeholder="Počet osob*"
+                min="1" max="10" >  
+              </div>
+            
+            </div>
+            <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="4" placeholder="Zpráva..."></textarea>
+            </div>
+           
+          
+            <div class="text-center">
+              <button type="reset">Odeslat rezervaci</button>
+              <div id="upozorneni">*Pole označené hvezdičkou jsou důležité, bez nich vaší rezervaci nemůžeme příjmout</div>
+            </div>
+  
+            <div id="success-message" style="display: none;">
+              <div id="super">Rezervace proběhla úspěšně!</div>
+            </div>
+      </div>
+      </div>
+          </form>
+        </div>
+      </section>
+      <!-- Konec -->
+
+
+      <!--  Recenze  -->
+      <div class="testimonials-container">
+        <div class="testimonial">
+            <img src="kim.jpg" alt="Customer Photo" class="testimonial-photo">
+            <p class="testimonial-text">"Nejlepší fretka co jsem kdy měl, cítím se tu jak doma, design je krásný!"</p>
+            <div class="stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+        </div>
+
+        <div class="testimonial">
+          <img src="Lisa.jpg" alt="Customer Photo" class="testimonial-photo">
+          <p class="testimonial-text">"Výborné jídlo, skvělé ceny, není co vytknout, MILUJUUU!!"</p>
+          <div class="stars">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+          </div>
+      </div>
+  
+
+        <div class="testimonial">
+            <img src="lukas.jpg" alt="Customer Photo" class="testimonial-photo">
+            <p class="testimonial-text">"Chodíme s manželkou skoro furt, ta vůně a jídlo je nepopsatelné"</p>
+            <div class="stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+        </div>
+      </div>
+
+
+      <!-- Q&A pro zákazníky -->
+      <section class="faq">
+        <h2>Q&A</h2>
+        <ul>
+          <li>
+            <h3>Q: Máte v nabídce i asijské speciality?</h3>
+            <p>A: Ano máme i asijské speciality.</p>
+          </li>
+          <li>
+            <h3>Q: Funguje u vás rozvoz jídla?</h3>
+            <p>A: Ano, jsme na foodoře, woltu i boltu.</p>
+          </li>
+          <li>
+            <h3>Q: Jde si u vás vytvořit rezervaci?</h3>
+            <p>A: Samozřejmě! Formulář máme zde na webových stránkach.</p>
+          </li>
+        </ul>
+      </section>
+      
+
+      <!-- Kontakt Section  -->
+      <section id="contact" class="contact">
+        <div class="container max-width-container">
+          <div class="section-title">
+            <h2>Kde nás najít?</h2>
+          </div>
+
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1974.0093542396778!2d14.428339056311211!3d50.08678466584492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94eb6c1eb9bb%3A0xc75392682b3b25bc!2zTmEgUMWZw61rb3DEmyA4NTkvMjIsIDExMCAwMCBOb3bDqSBNxJtzdG8!5e0!3m2!1scs!2scz!4v1716820246506!5m2!1scs!2scz" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="container mt-5 max-width-container">
+          <div class="info-wrap">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 info">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Adresa:</h4>
+                <p>Na Příkopě 859/22 <br/>110 00 Nové Město, Česko </p>
+              </div>
+
+              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                <i class="bi bi-clock"></i>
+                <h4>Otevírací hodiny:</h4>
+                <p>Pondělí - Neděle:<br />9:00 - 23:00</p>
+              </div>
+
+              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>bibimbob@gmail.com</p>
+              </div>
+
+              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                <i class="bi bi-phone"></i>
+                <h4>Telefon:</h4>
+                <p>+420 842 994 775</p>
+              </div>
+            </div>
+          </div>
+    </main>
+
+
+    <!-- Zápatí -->
+    <footer id="footer">
+      <div class="container">
+        <h3>BIBIMBOB</h3>
+        <div class="copyright">
+          &copy; Copyright <strong><span>BIBIMBOB</span></strong
+          >. All Rights Reserved
+        </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Konec -->
+
+
+<script src="main.js"></script>
+  </body>
+</html>

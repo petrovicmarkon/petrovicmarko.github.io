@@ -1,7 +1,18 @@
 
+/* General */
 body {
   font-family: "Poppins", sans-serif;
   color: #970000;
+}
+
+a {
+  text-decoration: none;
+  color: #970000;
+}
+
+a:hover {
+  color: #970000;
+  text-decoration: none;
 }
 
 
@@ -43,21 +54,56 @@ h6 {
 }
 
 /* logo */ 
-#header .logo {
-  width: 19%;
-  color: #970000;
+#header .logo h1 {
+  font-size: 28px;
+  margin: 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 3px;
 }
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
+  color: #970000;
   text-decoration: none;
 }
 
-#header .logo img {
-  padding: 0;
-  margin: 0;
-  max-height: 40px;
+
+/* REZERVACE STOLU */
+
+/* tlačítko*/
+.book-a-table-btn {
+  background: #970000;
+  color: #fff;
+  border-radius: 50px;
+  margin: 0 0 0 20px;
+  padding: 10px 25px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  white-space: nowrap;
 }
+
+/* při kliknutí*/
+.book-a-table-btn:hover {
+  background: #fff;
+  color: #970000;
+}
+
+@media (max-width: 992px) {
+  .book-a-table-btn {
+    margin: 0 15px 0 0;
+    padding: 8px 20px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 400px) {
+  .book-a-table-btn {
+    display: none;
+  }
+} 
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -129,6 +175,23 @@ h6 {
   min-width: 200px;
 }
 
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #433f39;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+  color: #ffb03b;
+}
+
 .navbar .dropdown:hover>ul {
   opacity: 1;
   top: 100%;
@@ -162,7 +225,7 @@ h6 {
 * Pro mobil menu 
 */
 .mobile-nav-toggle {
-  color: #970000;
+  color: #000000;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -187,7 +250,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(39, 37, 34, 0.9);
   transition: 0.3s;
   z-index: 0;
 }
@@ -212,24 +275,29 @@ h6 {
   transition: 0.3s;
 }
 
-/* text */ 
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #000000;
+  color: #433f39;
 }
 
-/* aktuální stránka */ 
-.navbar-mobile a:hover,
-.navbar-mobile .active,
-.navbar-mobile li:hover>a {
-  color: #970000;
-}
 
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
 .navbar-mobile .dropdown ul li {
@@ -244,12 +312,19 @@ h6 {
   font-size: 12px;
 }
 
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+  color: #970000;
+}
+
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
 
-
-/* úvod */ 
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
 #hlavni {
   width: 100%;
   height: 100vh;
@@ -331,6 +406,7 @@ h6 {
 }
 
 
+
 /* button menu a book table*/ 
 #hlavni .btn-menu,
 #hlavni .btn-book {
@@ -374,8 +450,6 @@ h6 {
   }
 }
 
-
-
 /* Sekce */
 section {
   padding: 60px 0;
@@ -397,7 +471,6 @@ section {
   font-weight: 700;
   color: #000000;
 }
-
 
 
 /* Menu */
@@ -503,6 +576,7 @@ section {
 .dopolední {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
+  color: #000000;
   margin: 0;
   padding: 20px;
   display: flex;
@@ -533,46 +607,9 @@ section {
 
 
 
-
-/* REZERVACE STOLU - Button */
-
-/* tlačítko*/
-.book-a-table-btn {
-  background: #970000;
-  color: #fff;
-  border-radius: 50px;
-  margin: 0 0 0 20px;
-  padding: 10px 25px;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  transition: 0.3s;
-  white-space: nowrap;
-}
-
-/* při kliknutí*/
-.book-a-table-btn:hover {
-  background: #fff;
-  color: #970000;
-}
-
-@media (max-width: 992px) {
-  .book-a-table-btn {
-    margin: 0 15px 0 0;
-    padding: 8px 20px;
-    letter-spacing: 1px;
-  }
-}
-
-@media (max-width: 400px) {
-  .book-a-table-btn {
-    display: none;
-  }
-} 
-
-
-
-/* Rezervace */
+/*--------------------------------------------------------------
+Rezervace
+--------------------------------------------------------------*/
 .book-a-table .email-form {
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
@@ -612,8 +649,9 @@ section {
 }
 
 #upozorneni{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  color: #000000;
 }
 
 
@@ -750,7 +788,68 @@ section {
 }
 
 
-/* Zápatí*/ 
+.contact .email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .email-form input,
+.contact .email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .email-form input {
+  height: 44px;
+}
+
+.contact .email-form textarea {
+  padding: 10px 12px;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+/* zápatí*/ 
 #footer {
   background: #35322d;
   color: #fff;
