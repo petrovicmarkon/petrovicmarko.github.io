@@ -5,14 +5,7 @@
   /**
    * Easy selector helper function
    */
-  const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
-    } else {
-      return document.querySelector(el)
-    }
-  }
+  
 
   /**
    * Easy event listener function
@@ -168,9 +161,8 @@
       heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
   });
 
-  /**
-   * Menu isotope and filter
-   */
+
+  // Menu 
   window.addEventListener('load', () => {
     let menuContainer = select('.menu-container');
     if (menuContainer) {
@@ -197,14 +189,14 @@
 
   });
 
-  // Dopolední menu  
+  // ODPOLEDNÍ MENU 
   document.addEventListener('DOMContentLoaded', function () {
     const menu = document.getElementById('dopoledne');
     const currentTime = new Date();
     const currentHour = currentTime.getHours();
 
-    // Po 12 hodině zmizí
-    if (currentHour >= 20) {
+    // Po 12h hodině zmizí
+    if (currentHour >= 12) {
         menu.style.display = 'none';
     } else {
         menu.style.display = 'block';
@@ -220,6 +212,19 @@
     }, timeUntilNextDay);
 });
 
+
+// REZERVACE - ODESLÁNO 
+const form = document.getElementById('reservation-form');
+const successMessage = document.getElementById('success-message');
+
+form.addEventListener('reset', (e) => {
+  e.preventDefault();
   
+  successMessage.style.display = 'block';
+  setTimeout(() => {
+    successMessage.style.display = 'none';
+  }, 10000); // za 10 sekund zmizí
+});
+
 
 })()
